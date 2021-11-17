@@ -17,11 +17,20 @@ body.append(massaText)
 
 
 
+
+let favoritMat1 = prompt("vad är din favoritmat?")
+let favoritMat2 = prompt("vad är din näst bästa favoritmat?")
+let favoritMat3 = prompt("vad är din tredje bästa favoritmat?")
+
+
 const listaMat = document.createElement("ul")
-listaMat.insertAdjacentHTML("afterbegin" , "<li>Pizza</li>")
-listaMat.insertAdjacentHTML("afterbegin" , "<li>Kebab</li>")
-listaMat.insertAdjacentHTML("afterbegin" , "<li>Taco</li>")
+listaMat.insertAdjacentHTML("beforeend" , "<li>"+ favoritMat1 +"</li>")
+listaMat.insertAdjacentHTML("beforeend" , "<li>"+ favoritMat2 +"</li>")
+listaMat.insertAdjacentHTML("beforeend" , "<li>"+ favoritMat3 +"</li>")
 body.append(listaMat)
+
+
+
 
 
 
